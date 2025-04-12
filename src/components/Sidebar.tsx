@@ -12,8 +12,7 @@ const Sidebar = () => {
     { name: 'Assistant', path: '/' },
     { name: 'SIP Calculator', path: '/sip-calculator' },
     { name: 'Learning Hub', path: '/learning-hub' },
-    { name: 'Market Insights', path: '/market-insights' },
-    { name: 'Settings', path: '/settings' },
+    { name: 'Market Insights', path: '/market-insights' }
   ];
 
   return (

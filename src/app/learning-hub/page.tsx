@@ -13,40 +13,40 @@ export default function LearningHubPage() {
   // Placeholder data - replace with actual content sources later
   const learningResources = [
     {
-      title: "What is a Mutual Fund?",
+      title: "Understanding Mutual Funds",
       description: "An introduction to mutual funds, how they work, and their types.",
-      type: "Article",
-      link: "#" // Placeholder link
+      type: "Video",
+      embedUrl: "https://www.youtube.com/embed/JUtes-k-VX4?si=ipuATYagI3rKC-wb" // Placeholder link
     },
     {
       title: "Understanding SIPs",
       description: "Learn about Systematic Investment Plans and their benefits.",
       type: "Video",
-      embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Example embed URL (replace!)
+      embedUrl: "https://www.youtube.com/embed/Tv4pkivGvdU?si=h5mBgt8VK4hRqhSq" // Example embed URL (replace!)
     },
     {
       title: "Basics of Stock Market Investing",
       description: "Key concepts for beginners looking to invest in stocks.",
-      type: "Article",
-      link: "#"
+      type: "Video",
+      embedUrl: "https://www.youtube.com/embed/A7fZp9dwELo?si=s2ZfRhHxYYgBr67H"
     },
      {
       title: "Debt vs Equity Investments",
       description: "Understanding the difference between debt and equity assets.",
-      type: "Article",
-      link: "#"
+      type: "Video",
+      embedUrl: "https://www.youtube.com/embed/toUYmsUob4Y?si=rWUSm9ePsNFRM5h1"
     },
      {
       title: "Importance of Diversification",
       description: "Why spreading your investments is crucial for managing risk.",
       type: "Video",
-      embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Example embed URL (replace!)
+      embedUrl: "https://www.youtube.com/embed/jg_MflByI3Y?si=K2sSZxVUACi2wj96" // Example embed URL (replace!)
     },
      {
       title: "Reading Financial Statements",
       description: "A beginner's guide to understanding balance sheets and income statements.",
-      type: "Article",
-      link: "#"
+      type: "Video",
+      embedUrl: "https://www.youtube.com/embed/uEjKr_Z92mA?si=k8yfLJdiViRik7Zo"
     }
   ];
 
@@ -84,10 +84,8 @@ export default function LearningHubPage() {
                 )}
               </CardContent>
               <CardFooter>
-                {resource.type === 'Article' && resource.link && (
-                  <Link href={resource.link} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline">
-                    Read Article →
-                  </Link>
+                {resource.type === 'Article' && (
+                  <span className="text-sm text-muted-foreground">Article link not available</span>
                 )}
                  {resource.type === 'Video' && (
                    <span className="text-sm text-muted-foreground">Watch Video Above</span>
